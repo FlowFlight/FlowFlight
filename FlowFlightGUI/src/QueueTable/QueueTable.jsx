@@ -192,7 +192,8 @@ function Table(props){
     }
     return(
             <div className="queueContainer">
-                <h1>Aircraft Queue Manager - FlowFlight</h1>
+                <h1 class="mainheader">Aircraft Queue Manager - FlowFlight</h1>
+                <div class="megasuperai">Use AI to order the queue</div>
             <div className='addqueue'>
                 <input type="text" value={newScheduledTakeOff} onChange={changeNewScheduledTakeOff} placeholder='Time...'></input>
                 <input type="number" value={newPriority} onChange={changeNewPriority} placeholder='Priority...'></input>
