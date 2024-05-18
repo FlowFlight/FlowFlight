@@ -25,6 +25,6 @@ brain = NeuralNetwork(0.1)
 #    0
 #])
 
-print(brain.train(input_vectors, targets, 100))
+#print(brain.train(input_vectors, targets, 100))
 
-print(brain.predict([25, -20, 0]))
+#print(brain.predict([25, -20, 0]))
