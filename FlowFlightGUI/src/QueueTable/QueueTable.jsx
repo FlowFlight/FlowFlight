@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import PropTypes from 'prop-types'
+import PropTypes from 'prop-types';
+import axios from 'axios';
 function Table(props){
 
     const [queue, setQueue] = useState(props.content);
@@ -14,7 +15,19 @@ function Table(props){
     const [filter, setFilter] = useState("")
     const [filterStatus, setFilterStatus] = useState(false)
     const [queuesFiltered, setqueuesFiltered] = useState(props.content);
+    const [data, setData] = useState(null);
     const x = 0;
+
+    function connectToPython()
+    {
+        axios.get('http://localhost:5000/api/data')
+        .then(response => {
+            setData(response.data);
+        })
+        .catch(error => {
+            console.error('There was an error fetching the data!', error);
+        });
+    }
     function addqueue()
     {
         if(newScheduledTakeOff.trim()==="" || newPriority.trim() === "" || newFlight=== "" || newAircraft==="" || newAirline === "") return;
@@ -26,6 +39,7 @@ function Table(props){
         setNewAircraft("");
         setNewAirline("");
     }
+
     function removequeue(index)
     {
         let updatedQueue = queue.filter((_,i)=>i!==index);
@@ -192,8 +206,8 @@ function Table(props){
     }
     return(
             <div className="queueContainer">
-                <h1 class="mainheader">Aircraft Queue Manager - FlowFlight</h1>
-                <div class="megasuperai">Use AI to order the queue</div>
+                <h1 className="mainheader">Aircraft Queue Manager - FlowFlight</h1>
+                <div onClick={()=>connectToPython()} className="megasuperai">Use AI to order the queue</div>
             <div className='addqueue'>
                 <input type="text" value={newScheduledTakeOff} onChange={changeNewScheduledTakeOff} placeholder='Time...'></input>
                 <input type="number" value={newPriority} onChange={changeNewPriority} placeholder='Priority...'></input>
@@ -253,6 +267,7 @@ function Table(props){
             </table>
             <button className="downloadButton" onClick={()=>{downloadJSON(queuesFiltered,getCurrentDateTime())}}>Download JSON</button>
             <button className="downloadButton" onClick={()=>{downloadCSV(queuesFiltered,getCurrentDateTime())}}>Download CSV</button>
+            {data ? <p>{data.message}</p> : <p>Loading...</p>}
             </div>
     );
 }
