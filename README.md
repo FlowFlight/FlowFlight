@@ -1,7 +1,7 @@
 # FlowFlight
 The main repository of our project
 
-# Idea
+## Idea
 ### Description
 This project aims to develop an advanced artificial intelligence algorithm designed to assist air traffic controllers in making efficient and effective decisions regarding the sequencing of aircraft for landing and departure. The primary goal is to handle disruptions, such as delays, that can upset the entire schedule, thereby optimizing overall airport operations.
 
@@ -40,7 +40,7 @@ This project aims to develop an advanced artificial intelligence algorithm desig
 4. Starting the training process
 5. Testing whether the algorithm is properly trained. possibly repeat point number 4.
 
-### Creators
+## Creators
   - Jakub Janik - https://github.com/JamesYanik
   - Jan Matacz - https://github.com/JanMatacz
   - Sebastian Sonieczny - https://github.com/sebe324
