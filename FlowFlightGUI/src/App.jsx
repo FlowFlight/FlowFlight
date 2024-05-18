@@ -16,6 +16,7 @@ function App() {
   return (
     <>
       <Table name="Aircraft queue manager" content={flights}/>
+      <img src="src/image.png"/>
     </>
   )
 }

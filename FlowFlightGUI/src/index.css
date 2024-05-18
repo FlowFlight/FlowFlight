@@ -86,3 +86,7 @@ td input[type="number"]{
   border:1px solid black;
   background: antiquewhite;
 }
+
+.queueContainer, img{
+  float:left;
+}

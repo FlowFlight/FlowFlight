@@ -192,7 +192,7 @@ function Table(props){
     }
     return(
             <div className="queueContainer">
-                <h1>Aircraft queue manager - FlowFlight</h1>
+                <h1>Aircraft Queue Manager - FlowFlight</h1>
             <div className='addqueue'>
                 <input type="text" value={newScheduledTakeOff} onChange={changeNewScheduledTakeOff} placeholder='Time...'></input>
                 <input type="number" value={newPriority} onChange={changeNewPriority} placeholder='Priority...'></input>
