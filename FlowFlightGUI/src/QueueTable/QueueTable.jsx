@@ -15,13 +15,13 @@ function Table(props){
     const [filter, setFilter] = useState("")
     const [filterStatus, setFilterStatus] = useState(false)
     const [queuesFiltered, setqueuesFiltered] = useState(props.content);
-    const [data, setData] = useState(null);
     const x = 0;
 
     function connectToPython()
     {
         axios.get('http://localhost:5000/api/data')
         .then(response => {
+            setQueue(JSON.parse(response.data.message));
             setData(response.data);
         })
         .catch(error => {
@@ -267,7 +267,6 @@ function Table(props){
             </table>
             <button className="downloadButton" onClick={()=>{downloadJSON(queuesFiltered,getCurrentDateTime())}}>Download JSON</button>
             <button className="downloadButton" onClick={()=>{downloadCSV(queuesFiltered,getCurrentDateTime())}}>Download CSV</button>
-            {data ? <p>{data.message}</p> : <p>Loading...</p>}
             </div>
     );
 }

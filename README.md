@@ -42,6 +42,8 @@ This project aims to develop an advanced artificial intelligence algorithm desig
 
 ### How to run the application
 
+Install pip and npm.
+
 **Windows**
 - Click start.cmd.
 - Copy the localhost:xxxx to your browser.
