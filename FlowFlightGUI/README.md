@@ -1,2 +1,2 @@
-# FlightFlow GUI Prototype
-- When the user clicks the ai button the aircraft queue will be sorted in an optimized way.
+# FlightFlow GUI Prototyp
+- Gdy użytkownik wciśnie przycisk do sortowania, to algorytm posortuje kolejkę lotów.
