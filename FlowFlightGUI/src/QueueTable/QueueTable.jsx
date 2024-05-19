@@ -222,7 +222,7 @@ function Table(props){
                     <th onClick={()=>sort("Priority")}>Priority</th>
                     <th onClick={()=>sort("Flight")}>Flight</th>
                     <th onClick={()=>sort("Aircraft")}>Aircraft</th>
-                    <th onClick={()=>sort("Airline")}>Link</th>
+                    <th onClick={()=>sort("Airline")}>Airline</th>
                 </tr>
                 </thead>
                 <tbody>

@@ -34,14 +34,30 @@ This project aims to develop an advanced artificial intelligence algorithm desig
 
 ### Steps to create and implement our solution
 
-1. Creating a fragment of the project and describing the situation when our program is connected
-2. Finding data for training the artificial intelligence algorithm
-3. Writing a neural cloud
-4. Starting the training process
+1. Creating a fragment of the project and describing the situation when our program is connected.
+2. Finding data for training the artificial intelligence algorithm using historical airport data.
+3. Writing a neural network.
+4. Starting the training process.
 5. Testing whether the algorithm is properly trained. possibly repeat point number 4.
+
+### How to run the application
+
+**Windows**
+- Click start.cmd.
+- Copy the localhost:xxxx to your browser.
+
+**Linux**
+- Click start.sh.
+- Copy the localhost:xxxx to your browser.
+
+### Related articles
+- https://ourworldindata.org/global-aviation-emissions​
+- https://www.researchgate.net/figure/Example-of-a-queuing-model-for-aircraft-arrival-traffic_fig5_335957347​
+- https://www.linkedin.com/pulse/avoiding-aircraft-queueing-using-ai-daniel-haque​
+- https://www.eurocontrol.int/sites/default/files/content/documents/single-sky/pru/publications/other/cost-of-air-transport-delay-in-eu-ita.pdf
 
 ## Creators
   - Jakub Janik - https://github.com/JamesYanik
   - Jan Matacz - https://github.com/JanMatacz
-  - Sebastian Sonieczny - https://github.com/sebe324
+  - Sebastian Skonieczny - https://github.com/sebe324
   - Robert Gruszczyński - https://github.com/gruszczrob
